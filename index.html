@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/union/stylesheet.css">
+		<script>
+		function reload() {
+			document.getElementById("systemprofile").src = document.getElementById('systemprofile').src;
+		};
+		// Reload the current status every 15 minutes
+		setInterval(reload, 15*60*1000);
+		// Reload everything every 24 hours (for app updates)
+		setInterval(window.location.reload.bind(window.location), 1000*60*60*24);
+		</script>
+	</head>
+	<body>
+		<img id="respclogo" alt="RESPC Logo" src="respclogo.png">
+		<img id="stratalogo" alt="Strata Solar Logo" src="stratalogo.png">
+		<img id="unionlogo" alt="Carolina Union Logo" src="culogo.png">
+		<iframe id="systemprofile" src='https://www.sunnyportal.com/Templates/PublicPage.aspx?page=6d806835-63f7-4577-ab4c-8116de0ec142'></iframe>
+	</body>
+</html>
